@@ -1,9 +1,10 @@
-import { component$ } from '@builder.io/qwik';
+import { component$ } from "@builder.io/qwik";
+import { PokemonText } from "~/components";
 
 export default component$(() => {
-	return (
-		<div>
-			<h1>Hello Qwik App!</h1>
-		</div>
-	);
+  return (
+    <div class="flex w-full justify-center">
+      <PokemonText text="PokemAll" length={420} />
+    </div>
+  );
 });
